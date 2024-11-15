@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <style>
+    body {
+      height: 100vh;
+      background: lightblue;
+    }
+
+    #container {
+      position: relative;
+      width: 100%; 
+      height: 60vh;
+      overflow: hidden; 
+    }
+
+    @media screen and (min-width: 800px) {
+      #container {
+        height: 100vh;
+      }
+    }
+   
+
+    .img {
+      width: 100%; 
+      display: none;
+      object-fit: cover;
+    }
+
+    #previous, #next {
+      position: absolute;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 3px 10px;
+      border: none;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      border-radius: 100%;
+      background: lightgreen;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    #previous {
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+    }
+
+    #next {
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+    }
+
+    img.displaySlide{
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="container">
+    <button id="previous">&#10094</button>
+    <div id="wrapper-container">
+      <img src="https://placehold.co/600x400?text=Slide+1" alt="Image 1" class="img">
+      <img src="https://placehold.co/600x400?text=Slide+2" alt="Image 2" class="img">
+      <img src="https://placehold.co/600x400?text=Slide+3" alt="Image 3" class="img">
+      <img src="https://placehold.co/600x400?text=Slide+4" alt="Image 4" class="img">
+      <img src="https://placehold.co/600x400?text=Slide+5" alt="Image 5" class="img">
+    </div>
+    <button id="next">&#10095</button>
+  </div>
+  
+<script src="script.js"></script>
+</body>
+</html>

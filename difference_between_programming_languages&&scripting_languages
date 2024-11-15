@@ -1,0 +1,6 @@
+Scripting languages are generally interpreted. Programming languages are typically compiled. This means that scripting languages are executed directly by the interpreter, while programming languages are first translated into machine code by the compiler before being executed.
+
+Scripting language needs runtime environment whereas programming language does not need any runtime environment.
+
+Programs written in programming language can run on
+its own.

@@ -1,0 +1,20 @@
+body{
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#container{
+  width: 100vw;
+  height: 2000px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.box{
+  width:100px;
+  height: 100px;
+  border: 1px solid black;
+}

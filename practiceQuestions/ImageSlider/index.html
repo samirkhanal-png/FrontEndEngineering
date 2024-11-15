@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body{
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    #container{
+      width: 600px;
+      height: 50%;
+      border: 1px solid black;
+      position: relative;
+    }
+
+    #wrapper-container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+
+    button{
+      position: absolute;
+      top: 45%;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    #prevBtn{
+      left:10px;
+    }
+
+    #nextBtn{
+      right: 10px;
+    }
+
+    .displaySlide{
+      display: block;
+    }
+
+    img{
+     display: none;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div id="container">
+    <button id="prevBtn"><</button>
+    <div id="wrapper-container">
+      <img src="img1.jpg" alt="">
+      <img src="img2.jpg" alt="">
+      <img src="img3.jpg" alt="">
+      <img src="img4.jpg" alt="">
+      <img src="img5.jpg" alt="">
+    </div>
+    <button id="nextBtn">></button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

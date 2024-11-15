@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Functions</h2>
+  <script>
+    // function sumOfNumber(){
+    //   console.log("Hello")
+    // }
+
+    // sumOfNumber()
+    // console.log(sumOfNumber);
+
+    sumOfNumber()
+    function sumOfNumber(){
+      console.log("Hello")
+    } //due to hoisting function declaration is moved at the top so when the function is called before then definition then also function call is executed normally       
+
+    function sum_Number(a,b){
+      console.log(a+b);
+    }
+    // sum_Number(1,2);
+
+    sum_Number(1); //second argument is not passed so second argument is undefined 
+
+    //so to prevent such kind of situations we use default parameter 
+
+    function sum_Number(a,b=0){ //default value is used only if the user does not pass any value
+      return a+b;
+      console.log(a+b); //this will not execute since already returned
+    }
+    var a=sum_Number(10,20)
+    console.log(a)
+
+    //Anonymous function  //function without any name
+    var sumOfNumber=function(){
+      console.log("Hello")
+    }
+
+    //Arrow function is also an anonymous function and assigned
+    var sumOfNum=(a,b)=>(a+b);
+    var b = sumOfNum(3,4);
+    console.log(b);
+
+    (()=>console.log("IIFE called"))()
+
+    //Which function is called first
+    function abc(){
+      console.log("named function");
+    }
+
+    var abc=function(){
+      console.log("anonymous function");
+    }
+    abc()
+
+    //function definition is moved to the top
+    //var abc;
+    //then anonymous function is assigned to abc
+    //so anonymous function is called
+    
+
+  </script>
+  
+</body>
+</html>
+
+<!-- 
+Function naming rules:
+First letter should be small and start of every new word should be capital
+
+
+Hoisting=>All the  declarations are moved at the top before the execution of the program starts.
+
+function definition is moved at the top.
+
+Only var variables are hoisted
+
+let and const variables are not hoisted
+
+variables passed inside function definition is parameter and variables passed inside function call is argument
+
+Whenever there is any number + undefined or null then it is evaluated as NaN
+
+Anonymous function/ Expression function
+Function without any name is anonymous function
+
+We can call it by assigning it first to a variable.
+
+Since it is assigned to a variable 
+
+if we call it before defining it then it will give error since variable is hoisted and function is undefined.
+
+---Arrow function ----
+Arrow function is an anonymous function and it is also assigned to a variable to use it.
+
+(parameters)=>{}
+
+If we want to return only one statements then do not give curly brackets
+
+var sumOfNumber=()=>a+b;
+
+If there is only one parameter then do not give parenthesis
+
+if we are returning something without using curly brackets and return statement then we bind it inside parenthesis
+
+small parenthesis is used for returning only one statement and it is done for readability
+
+-----Immediately Invoked Function Execution-----
+(function(){defintion})()
+
+Function is defined and immediately executed
+
+It does not have any name and is not assigned to a variable
+
+Used for variable hoisting within blocks.
+
+Retains the privacy for variables defined in the function.
+
+Saves from polluting global scope.
+
+ -->

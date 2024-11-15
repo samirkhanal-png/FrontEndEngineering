@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   body{
+    width: 100vw;
+    height: 100vh;
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+
+    #portfolio{
+      display: grid;
+      width: 90vw;
+      height: 90vh;
+      grid-template: repeat(3,1fr)/repeat(3,1fr);
+      grid-gap:10px;
+      grid-template-areas: "userName movieList movieList"
+      "userName movieList movieList"
+      "contactUs movieList movieList"
+      ;
+    }
+
+    .card{
+      background-color: white;
+      border-radius: 10px;
+    }
+
+.userName{
+ grid-area: userName;
+}
+
+.movieList{
+ grid-area: movieList;
+}
+
+.contactUs{
+grid-area:contactUs;
+}
+
+footer{
+  height: 20vh;
+  width: 90vw;
+  margin-top: 30px;
+}
+
+.userLogo{
+  width: 100px;
+  height: 100px;
+}
+
+.userName_wrap>h2{
+  color: red;
+}
+
+.userName_wrap>button{
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.userName_wrap{
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer{
+  width: 90vw;
+  height: 20vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.movieList_wrap{
+width: 90%;
+height: 80%;
+margin: 0 auto;
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.movie_item{
+  width: 100%;
+  display: flex;
+}
+
+.movie_img{
+  width: 80px;
+  height: 80px;
+}
+
+.movie_detail{
+  display: flex;
+  flex-direction: column;
+}
+
+.contactUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactUs_wrap{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact_logo{
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+}
+
+
+  </style>
+
+</head>
+<body>
+  <div id="portfolio">
+    <div class="userName card">
+      <span class="userName_wrap">
+        <img src="user_logo.png" alt="" class="userLogo">
+        <h2>User Name</h2>
+        <span >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, sequi?</span>
+        <button>Know More About Me</button>
+      </span>
+       
+    </div>
+
+    <div class="movieList card">
+
+      <h2>My Favourite Movie</h2>
+       <div class="movieList_wrap">
+
+        <div class="movie_item">
+          <img src="movie_1.jpeg" alt="" class="movie_img">
+          <div class="movie_detail">
+            <h3>2001 Space Odessey</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, aliquam.</p>
+          </div>
+        </div>
+
+        <div class="movie_item">
+          <img src="movie_2.jpeg" alt="" class="movie_img">
+          <div class="movie_detail">
+            <h3>Alien</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, aliquam.</p>
+          </div>
+        </div>       
+
+        <div class="movie_item">
+          <img src="movie_3.jpg" alt="" class="movie_img">
+          <div class="movie_detail">
+            <h3>Monsieur Hulot</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, aliquam.</p>
+          </div>
+        </div>       
+      </div>
+
+    </div>
+
+    <div class="contactUs card">
+      <h2>Contact Us</h2>
+       <div class="contactUs_wrap">
+        <img src="facebook_logo.png" alt="" class="movie_img contact_logo">
+        <img src="twitter_logo.png" alt="" class="movie_img contact_logo">
+        <img src="linkedin_logo.png" alt="" class="movie_img contact_logo">
+       </div>
+    </div>
+  </div>
+
+  <footer class="card">
+    <h2>About this page</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque placeat voluptatum repellendus, earum laboriosam dolorum eius quisquam ratione repellat ex.</p>
+  </footer>
+
+  
+</body>
+</html>
