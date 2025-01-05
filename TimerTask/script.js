@@ -1,6 +1,9 @@
 const start=document.querySelector("#start")
 const stop=document.querySelector("#stop")
 const reset=document.querySelector("#reset")
+const lap=document.querySelector("#lap")
+const listBox=document.querySelector("#laps")
+const timerShow=document.querySelector("#TimeShower")
 
 const timer=document.createElement("h2")
 let hour=0
@@ -13,7 +16,7 @@ function updateTimer(){
   let nMinute=minute.toString().padStart(2,"0")
   let nSecond=second.toString().padStart(2,"0")
   timer.innerText=`${nHour}:${nMinute}:${nSecond}`
-  document.body.appendChild(timer)
+  timerShow.appendChild(timer)
 }
 
 start.addEventListener("click",()=>{
@@ -39,8 +42,22 @@ start.addEventListener("click",()=>{
   updateTimer()
 })
 
-function stop(){
+function stopTimer(){
   clearInterval(id)
 }
 
-stop.addEventListener("click",stop)
+stop.addEventListener("click",stopTimer)
+
+lap.addEventListener("click",()=>{
+  let li=document.createElement("li")
+  li.textContent=timer.innerText
+  listBox.appendChild(li)
+})
+
+reset.addEventListener("click",()=>{
+  hour=0
+  minute=0
+  second=0
+  updateTimer()
+  stopTimer()
+})

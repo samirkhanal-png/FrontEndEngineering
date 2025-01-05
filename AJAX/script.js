@@ -10,8 +10,10 @@ console.log(request)
 
 
 request.open("GET","https://feecq.github.io/api/users.json") //get to fetch the data from the server post to send the data to the server
+//this is just setting the request object headers
 
-request.send() //asking to send the response  
+
+request.send() //request is sent
 
 //at the moment in the response properties of the request object there is any value appearing then load event occurs
 

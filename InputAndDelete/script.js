@@ -11,10 +11,8 @@ addBtn.addEventListener("click",()=>{
   let inputEle=inputArea.value
   if(inputEle){
     arr.push(inputEle)
-  }
-  
+  }  
   box.innerText=`Elements that are currently here${arr}`
-
 })
 
 

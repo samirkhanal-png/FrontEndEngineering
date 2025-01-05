@@ -1,10 +1,11 @@
 //Schedule function execution after fixed amount of time
 let loggedIn=false
+let id=NULL
 if(loggedIn){
- clearTimeout()
+ clearTimeout(id)
 }
 else{
-  setTimeout(function(){
+  id=setTimeout(function(){
     console.log("Hello")
   },1000)
 }

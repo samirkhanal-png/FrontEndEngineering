@@ -5,7 +5,8 @@ const children=div.children
 //returns an HTMLCollection of all the element nodes (HTML tags) that are the direct children of the specified element.
 
 const children1=div.childNodes
-console.log(children1) //returns nodelist (array like structure) of direct children as well as also returns text nodes(empty space)
+console.log(children1) 
+//returns nodelist (array like structure) of direct children as well as also returns text nodes(empty space)
 
 //new line after every children is considered as text node
 
@@ -27,8 +28,8 @@ console.log(head.parentNode.parentNode)
 
 //Difference between parent element and parent node
 const html=document.querySelector('html')
-console.log(html.parentElement) //null 
-console.log(html.parentNode) //document object
+console.log(html.parentElement) //null //returns only html collection //nothing is the parent tag of html
+console.log(html.parentNode) //document object //returns nodes
 
 //we prefer parentElement over parentNode
 

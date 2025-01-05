@@ -60,8 +60,8 @@ obj.obj1.address = "Chitkara";
 //for of is applied only in array as it works with the help of index no so this gives error
 //we iterate an object using for in loop
 for (let key in obj) {
-  //key variable is bringing keys in form of string so no need to apply quotes //dot operator cannot access the string keys
-  console.log(obj[key]); //Now we have key so we can access the obj
+  //key variable is bringing keys in form of string so no need to apply []] //dot operator cannot access the string keys
+  console.log(obj[key]); //Now we have key so we can access the obj properties value
 }
 
 //Object is made for single user

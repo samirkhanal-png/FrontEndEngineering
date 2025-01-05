@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e9ecef; 
+  margin: 0;
+  padding: 20px;
+}
+
+/* Input Styles */
+input {
+  width: 80%;
+  height: 40px; 
+  border-radius: 10px;
+  border: 1px solid #007BFF; 
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); 
+}
+
+#container {
+  width: 100%;
+  margin-top: 10px;
+  height: auto; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-evenly;
+  align-items: center;
+  padding: 20px; 
+  background-color: rgba(0, 0, 0, 0.137);
+  border-radius: 10px; 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px; 
+}
+
+/* Item Styles */
+.item {
+  flex: 1 0 200px;
+  margin: 20px; 
+  height: 140px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  outline: none;
+  background-color: #f8f9fa; 
+  transition: transform 0.3s, box-shadow 0.3s; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333; 
+}
+
+.item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px;
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 90%;
+  }
+
+  .item {
+    flex: 1 0 200px; 
+  }
+}
+
+.hidden{
+  display: none;
+}

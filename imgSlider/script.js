@@ -13,6 +13,7 @@ function initializeSlider(){
 
 document.addEventListener("DOMContentLoaded",initializeSlider)
 
+
 function showSlider(Index){ //This is different Index since this is call by value
   // if(Index>=slides.length){
   //   Index=0 //Index is updated locally here only so the global Index is increasing more than 5 every time and is reset to 0 and shows the same image so we need to update it in that function only
@@ -28,18 +29,17 @@ function showSlider(Index){ //This is different Index since this is call by valu
 }
 
 function prevSlide(){
-
  Index--
- if(Index>=slides.length){
-  Index=0 
+ if(Index<0){
+  Index=slides.length-1
 }
  showSlider(Index)
 }
 
 function nextSlide(){
  Index++
- if(Index<0){
-  Index=slides.length-1
+ if(Index>=slides.length){
+  Index=0 
 }
  console.log(Index)
  showSlider(Index)

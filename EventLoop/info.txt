@@ -1,0 +1,24 @@
+Event loop pushes the microtask or task into the callStack if callStack is empty
+
+First of all the callstack executes all the normal tasks in order
+
+Whenever a callback function task with some timer is found it is sent to the webAPIs where the timer begins
+
+setTimeout(()=>,timer)
+
+Also for API based callbacks same thing happens when its work is done by the API for eg taking data from the user like allow disallow
+
+When the timer finishes then it is pushed into the task queue.
+
+Promises are handled in the web apis.
+After being executed it returns the promise handlers to the microtask queue.
+
+Microtask queue is where the promises reaction handlers are waiting (resolve and reject) are waiting in the microtask queue.
+
+Event loop gives more priority to microtask queue than to the task queue.
+
+When the microtask queue is empty only then the tasks waiting in task queue will get executed.
+
+Even after each task in task queue event loop checks if there  is any task in microtask queue.
+
+

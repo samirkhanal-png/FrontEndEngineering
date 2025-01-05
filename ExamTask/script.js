@@ -64,7 +64,7 @@ function getFromLocalStorage(){
 }
 
 function saveIntoLocalStorage(empArray){
- localStorage.setItem("empArray",JSON.stringify(empArray))
+ localStorage.setItem("empArray",JSON.stringify(empArray))//do not forget to stringify
 }
 
 btnSubmit.addEventListener("click",()=>{

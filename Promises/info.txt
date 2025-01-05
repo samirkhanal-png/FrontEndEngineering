@@ -1,0 +1,17 @@
+new Promise() is added to the call stack and promise object is created
+
+.then resolve or reject callback function is added to call stack queue normally or any code inside is added to some queue according to the situation
+
+When the promise is resolved or rejected then it goes to call stack 
+
+Promise state is fulfilled and we get a promise result done.
+
+Then, then goes to the callstack queue.
+
+.then is responsible for creating (promise reaction record) 
+promiseFulfill reaction handler which is sent to the microtask queue. 
+
+this reaction handler takes the previous promise result as the argument of the reaction handler function.
+
+
+

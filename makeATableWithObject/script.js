@@ -26,3 +26,11 @@ tBody.appendChild(Row) //cannot directly append string
 })
 
 // write your JS code here
+
+// users.forEach((user)=>{
+//   let p=document.createElement("p")
+//   p.innerHTML=`
+//    ${user.id} ${user.name} ${user.username} ${user.email}
+//   `
+//   tBody.appendChild(p)
+// })

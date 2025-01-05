@@ -7,7 +7,7 @@ JSON objects are similar to JS objects.
 
 In JS objects key could be written with double quotes or without but here should be written inside double quotes.
 
-JSON cannot store functions.
+Wow JSON cannot store functions.
 
 This structure cannot be made in JS file.
 

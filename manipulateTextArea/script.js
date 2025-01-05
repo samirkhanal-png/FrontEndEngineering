@@ -12,7 +12,6 @@ textBox.addEventListener("focus",()=>{
   }
   else{
     textBox.style.fontWeight="normal"
-
   }
 
   if(italic.checked){

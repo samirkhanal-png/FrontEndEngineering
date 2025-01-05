@@ -8,8 +8,6 @@
 
 //blocking codes are that code that takes a long time for computation and blocks the single thread 
 
-
-
 //By default JS is synchronous but we can make it asynchronous by browser apis and setTimeout setInterval
 
 // console.log("One") //normal tasks

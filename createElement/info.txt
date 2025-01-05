@@ -1,0 +1,6 @@
+We can create Elements of any name 
+If we give capital name it makes it small
+We can set its property by using .propertyName
+This is inline element by default
+
+But mostly we use it to create already existing element.

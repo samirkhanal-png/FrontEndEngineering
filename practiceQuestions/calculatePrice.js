@@ -3,7 +3,7 @@ const products = [
     name:'Boat Rockerz 255 Headphone',
     mrp:1500,
     discount:{
-rate: 120,
+     rate: 120,
      isPercentage:false
 }
   },

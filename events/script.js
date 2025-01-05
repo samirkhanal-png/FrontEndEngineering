@@ -64,7 +64,6 @@ Head                   Body
 // para.innerText="Document Object Model"
 // para.setAttribute("class","para")
 // para.style.color="red"
-
 // document.body.appendChild(para)
 // })
 
@@ -107,7 +106,5 @@ If you dynamically create elements and attach event listeners to them, be mindfu
 
 
 With the onclick attribute or head.onclick, only one function can be attached to handle the event, and assigning a new function will overwrite the previous one. But with addEventListener(), you can attach multiple event handlers to the same element for the same event without overwriting each other. This means each event handler will run independently when the event occurs.
-
-
 
 */
